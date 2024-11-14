@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Product } from "../../types/Product";
 import { fetchProduct } from "../../services/productService";
 import ProductCard from "../Product Card/product-card";
+import './product-list-styles.scss';
 
 
 
@@ -17,7 +18,7 @@ const ProductList: React.FC = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="product-list">
 			{products.length === 0 ? (
 				<p>No products available.</p>
 			) : (

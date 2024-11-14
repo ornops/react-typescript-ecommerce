@@ -1,0 +1,11 @@
+.product-card {
+	background-color: gray;
+	padding: 10px;
+	max-height: 20%;
+	max-width: 20%;
+
+	.product-card-image {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
