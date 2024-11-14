@@ -12,9 +12,9 @@ interface Product {
 const ProductComponent = () => {
 
 
-	const [product, setProduct] = useState<Product | null>(null);
+	const [product, setProduct] = useState<Product[] | null>(null);
 	useEffect(() => {
-		fetch('https://fakestoreapi.com/products/1')
+		fetch('https://fakestoreapi.com/products')
 			.then(res => res.json())
 			.then(json => setProduct(json))
 			.catch((error) => console.error('Error fetching product:', error));
@@ -22,21 +22,18 @@ const ProductComponent = () => {
 
 	return (
 		<div>
-			<span>{
-				product ? (
+			<div>{
+				product ? (product.map((product) => (
 					<div>{product.title}
 						<p>{product.id}</p>
 						<p>{product.price}</p>
 						<p>{product.description}</p>
 						<p>{product.category}</p>
 						<img src={product.image} alt="wew" />
-
-
 					</div>
-
-				) : (
+				))) : (
 					<p>Loading ...</p>
-				)}</span>
+				)}</div>
 		</div>
 	)
 }
