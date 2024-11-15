@@ -9,7 +9,9 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 	return (
 		<div className={styles.productCard}>
-			<img src={product.image} alt={product.title} className={styles.productCartImage} />
+			<div className={styles.imageContainer}>
+				<img src={product.image} alt={product.title} className={styles.productCartImage} />
+			</div>
 			<h3>{product.title}</h3>
 			<p>{product.price.toFixed(2)}</p>
 		</div>

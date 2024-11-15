@@ -1,6 +1,7 @@
 .productList {
-	background-color: blue;
+	background-color: #F6F6F6;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 	gap: 1vh;
 }
