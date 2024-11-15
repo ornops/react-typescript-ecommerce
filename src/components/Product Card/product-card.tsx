@@ -12,8 +12,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 			<div className={styles.imageContainer}>
 				<img src={product.image} alt={product.title} className={styles.productCartImage} />
 			</div>
-			<h3>{product.title}</h3>
-			<p>{product.price.toFixed(2)}</p>
+			<div className={styles.titleContainer}>
+				<h3>{product.title}</h3>
+			</div>
+
+
 		</div>
 	)
 }
