@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './searchbar.module.scss'
 
-const SearchBar = () => {
+const SearchBar: React.FC = () => {
 	return (
 		<div className={styles.searchBarContainer}>
 			<form action="">

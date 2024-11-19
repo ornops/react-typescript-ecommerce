@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UserMenu = () => {
+const NavMenu: React.FC = () => {
 	return (
 		<div>
 
@@ -8,4 +8,4 @@ const UserMenu = () => {
 	)
 }
 
-export default UserMenu
+export default NavMenu
