@@ -1,1 +1,45 @@
-.searchBarContainer {}
+.searchBarContainer {
+	display: flex;
+	width: 33%;
+	align-items: center;
+	justify-content: end;
+	padding-right: 2em;
+	border-radius: 25px;
+
+	.searchFieldContainer {
+		display: flex;
+		background-color: #F6F6F6;
+		border-radius: 25px;
+		width: 37%;
+		height: 50%;
+		padding-top: 3px;
+		align-items: center;
+		gap: 1px;
+
+		.iconContainer {
+			display: flex;
+			align-items: center;
+		}
+
+		.inputContainer {
+			.inputBox {
+				outline: none;
+				border: none;
+				height: 3em;
+				background-color: #F6F6F6;
+			}
+
+			.inputBox::placeholder {
+				text-align: start;
+				padding: 10px;
+			}
+		}
+
+
+
+	}
+
+
+
+
+}
