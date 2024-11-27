@@ -3,6 +3,7 @@ import styles from './header.module.scss'
 import SearchBar from '../SearchBar/searchbar'
 import LogoComponent from '../Logo/logo-component'
 import NavMenu from '../NavMenu/navmenu'
+import CartComponent from '../CartIcon/cart-component'
 
 const Header: React.FC = () => {
 	return (
@@ -10,6 +11,7 @@ const Header: React.FC = () => {
 			<LogoComponent />
 			<NavMenu />
 			<SearchBar />
+			<CartComponent />
 		</div>
 	)
 }
