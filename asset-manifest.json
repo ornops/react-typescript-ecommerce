@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-typescript-ecommerce/static/css/main.cda0675c.css",
+    "main.js": "/react-typescript-ecommerce/static/js/main.31432e4f.js",
+    "static/media/shopping bag.png": "/react-typescript-ecommerce/static/media/shopping bag.404e747196181eb1959f.png",
+    "index.html": "/react-typescript-ecommerce/index.html",
+    "main.cda0675c.css.map": "/react-typescript-ecommerce/static/css/main.cda0675c.css.map",
+    "main.31432e4f.js.map": "/react-typescript-ecommerce/static/js/main.31432e4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cda0675c.css",
+    "static/js/main.31432e4f.js"
+  ]
+}
